@@ -1,0 +1,38 @@
+{
+    "name": "socialvector/php",
+    "description": "Social Vector a PHP Social Authentication Library",
+    "keywords": ["oauth", "openid", "authentication", "authorization", "social", "api", "spaces", "google", "facebook", "twitter", "apple", "keycloak"],
+    "homepage": "https://socialvector.github.io",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Social Vector Contributors",
+            "email": "socialvectorglobal@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/socialvector/php/issues"
+    },
+    "require": {
+        "php": "^5.4 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "phpunit/phpunit": "^4.8.35 || ^6.5 || ^8.0"
+    },
+    "suggest": {
+        "firebase/php-jwt": "Needed to support Apple provider",
+        "phpseclib/phpseclib": "Needed to support Apple provider"
+    },
+    "autoload": {
+        "psr-4": {
+           "SocialVector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+           "SocialVectorTest\\SocialVector\\": "test/"
+        }
+    }
+}
